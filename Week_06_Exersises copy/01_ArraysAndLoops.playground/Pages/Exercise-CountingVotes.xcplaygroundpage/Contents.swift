@@ -100,10 +100,10 @@ if yes > no {
 //: ### Write Your Answer To The Exercise Below:
 //: -----------------------------------
 // Add your vote-processing function here:
-func printResults(forIssue: String, withVotes: Array!) {
-    yes = 0
-    no = 0
-    for votes in withVotes {
+func printResults(forIssue: String, with votes: [Bool]) {
+    var yes = 0
+    var no = 0
+    for vote in votes {
         if vote == true {
             yes += 1
         } else {
