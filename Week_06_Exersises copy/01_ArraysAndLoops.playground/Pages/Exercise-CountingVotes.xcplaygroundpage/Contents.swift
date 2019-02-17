@@ -112,6 +112,14 @@ func printResults(forIssue: String, with votes: [Bool]) {
     }
     print("\(yes) votes affirmative.")
     print("\(no) votes negative.")
+    
+    // Another way to do it:
+    
+    let _yes = votes.filter { $0 == true }
+    let _no = votes.filter { $0 == false }
+    
+    print("\(_yes.count) votes affirmative.")
+    print("\(_no.count) votes negative.")
 }
 
 
