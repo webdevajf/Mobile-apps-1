@@ -116,7 +116,7 @@ func printResults(forIssue: String, with votes: [Bool]) {
 
 
 
-printResults(forIssue: "Should we change the mascot?", withVotes:shouldMascotChangeVotes)
+printResults(forIssue: "Should we change the mascot?", with: shouldMascotChangeVotes)
 
 
 
